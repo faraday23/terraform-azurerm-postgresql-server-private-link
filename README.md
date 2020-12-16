@@ -50,11 +50,11 @@ module "subscription" {
 }
 
 module "rules" {
-  source = "git@github.com:openrba/python-azure-naming.git?ref=tf"
+  source = "git@github.com:[redacted]/python-azure-naming.git?ref=tf"
 }
 
 # For tags and info see https://github.com/Azure-Terraform/terraform-azurerm-metadata 
-# For naming convention see https://github.com/openrba/python-azure-naming 
+# For naming convention see https://github.com/[redacted]/python-azure-naming 
 module "metadata" {
   source = "github.com/Azure-Terraform/terraform-azurerm-metadata.git?ref=v1.1.0"
 
@@ -86,7 +86,7 @@ module "storage_acct" {
 
 # postgresql-server module
 module "postgresql_server" {
-  source = "github.com/openrba/terraform-azurerm-postgresql-server-vnet-rule.git?ref=v1.0.0"
+  source = "github.com/[redacted]/terraform-azurerm-postgresql-server-vnet-rule.git?ref=v1.0.0"
   # Required inputs 
   srvr_id                   = "01"
   srvr_id_replica           = "02"
